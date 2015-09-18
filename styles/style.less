@@ -4,15 +4,101 @@ Nerdy Birdy Game Styles
 Sarah Dandia 
 
 */
-@lightblue: #E0F8F7;
+@lightblue: #EFFBFB;
 @skyblue: #87DEF9;
+@green: #35B88F;
+@white: #FFFFFF;
 
-html, body, section {
+html, body {
 	width: 100%;
 	height: 100%;
 }
+h1, h2 {
+	font-family: "Indie Flower";
+}
+h3 {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	font-size: 20px;
+}
+@keyframes wiggle {
+	0% {
+		transform:rotate(3deg);
+	}
+	50% {
+		transform:rotate(-3deg);
+	}
+	100% {
+		transform:rotate(3deg);
+	}
+}
+.btn {
+	cursor: pointer;
+	border-radius: 15px;
+	font-family: "Indie Flower";
+	font-size: 28px;
+	margin-top: 15px;
+	padding: 10px 40px;
+	border: 0;
+	color: @white;
+	background-color: @green;
+}
+.btn:hover, .btn:focus, .active {
+	background-color: @green;
+	color: @white;
+	animation: wiggle 0.5s infinite;
+}
 .splash {
+	padding-top: 10%;
 	width: 100%;
 	min-height: 100%;
 	background: radial-gradient(@lightblue, @skyblue);
+	img {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	h1, h2 {
+		margin-top: 40px;
+	}
+}
+.game {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	min-height: 100%;
+	overflow: scroll;
+	background: @lightblue;
+	h3 {
+		margin-top: 30px;
+		line-height: 150%;
+		margin-bottom: 15px;
+	}
+	canvas {
+		margin: 0 auto;
+	}
+}
+.contact {
+	width: 100%;
+	min-height: 130%;
+	background: url('../assets/bg.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 0;
+	.contact_form {
+		margin-top: 100px;
+		background: @white;
+		padding: 50px;
+		border-radius: 5px;
+		font-family: "Source Sans Pro";
+		input {
+			margin-top: 15px;
+			font-size: 18px;
+		}
+		textarea {
+			font-size: 18px;
+		}
+		#contact_send {
+			font-size: 28px;
+		}
+	}
 }
