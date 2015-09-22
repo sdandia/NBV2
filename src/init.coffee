@@ -1,7 +1,7 @@
 $(document).ready ->
 	# scroll to game 
 	$("#playbtn").click ->
-		$('html, body').animate {scrollTop: $('.game').offset().top}, 1000
+		$('html, body').animate {scrollTop: $('#game').offset().top}, 1000
 	# send contact form
 	$("#contact_form").submit (event) ->
 		event.preventDefault()
