@@ -17,7 +17,7 @@ module.exports = (grunt) ->
 		coffee:
 			compile:
 					files:
-						'js/game.js': 'src/game.coffee'
+						'js/game.js': 'src/*.coffee'
 		uglify: 
 			build:
 				src: 'js/<%= pkg.name %>.js',
