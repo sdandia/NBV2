@@ -17,8 +17,8 @@ load =
 		game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
 		game.scale.minWidth = 400
 		game.scale.minHeight = 300
-		game.scale.maxWidth = 1200
-		game.scale.maxHeight = 900
+		game.scale.maxWidth = 800
+		game.scale.maxHeight = 600
 		game.scale.refresh()
 		game.stage.backgroundColor = bgColor
 		game.state.start 'menu'
