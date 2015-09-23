@@ -6,7 +6,7 @@ isSmallScreen = ->
 
 load = 
 	preload: ->
-		game.load.image 'sky', 'assets/game_sky_large.png'
+		game.load.image 'sky', 'assets/game_sky.png'
 		game.load.image 'birdy', 'assets/game_birdy.png'
 		game.load.image 'cloud', 'assets/game_cloud.png'
 		game.load.image 'submit-btn', 'assets/game_submit_btn.png'
