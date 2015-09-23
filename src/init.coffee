@@ -8,7 +8,7 @@ $(document).ready ->
 		msgStr = 
 			'name': $("#contact_name").val(),
 			'email': $("#contact_email").val(),
-			'message': $("contact_msg").val()
+			'message': $("#contact_msg").val()
 		$.ajax 
 			type: 'POST',
 			url: 'sendmsg.php',
